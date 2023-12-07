@@ -3,3 +3,126 @@
     height: 500px;
     background-color: rgb(218, 127, 127);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fundo_main{
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color:white;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    letter-spacing: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
