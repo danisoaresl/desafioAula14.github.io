@@ -11,3 +11,16 @@ div.flex{
     align-items: center;
     height: 100vh;
 }
+
+img {width: 100vh;}
+
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+html {
+    margin: 0;
+    background-color: black;
+}
