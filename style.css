@@ -1,55 +1,75 @@
 body{
     margin: 0px;
-    height: 400vh;
+    height: 100vh;
 
 }
 html{
     margin:0px;
+    line-height: 2rem;
 }
 
-#carouselExample{
-    width: 100vw;
-    height: 90vh;
+.header{
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D274D;
 }
 
-.d-block w-100{
-    width: 100%;
-    height: 100%;
+.header_logo{
+    width: 50px;
+    height: auto;
+    margin-left: 5px;   
 }
 
+.header_nav{
+    display: none;
 
+}     
 
-.estilo{
-    border: 2px solid red;
-    height: 500px;
-    background-color: rgb(218, 127, 127);
-}
-
-header{
-    text-align: right;
-    font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 10px;
+.header_nav.show{
     display: block;
-    background: black;
-    
 }
 
-.menu a{
-    text-decoration-line: none;
-    color: white;
-    
-}
-
-.menu li{
-    list-style: none;
-    display: inline;
+.header_nav li{
+    display: list-item;
+    text-align: center;
     padding: 2px 5px;
     font-size:10px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
+.header_nav a{
+    color: white;
+    text-decoration: none;   
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.header_nav a:hover{
+    text-decoration: none; 
+    background-color: purple; 
+}
+
+.header_nav ul{
+    
+    list-style-type: none;
+    margin: 0;
+    font-size: 10px;
+}
+
+#hamburguer{
+    background-color: lightblue;
+    color: red;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
 
 .fundo_main{
     background-image: url(imagens/fundo.jpg);
@@ -66,7 +86,7 @@ header{
     text-decoration: none;
     color: black;
     display: inline-block;
-    background-color:white;
+    background-color: lightgoldenrodyellow;
     padding: 2rem;
     font-size: 2rem;
     border-radius: 5px;
@@ -75,8 +95,111 @@ header{
 
 }
 
+#carouselExample{
+    width: 100vw;
+    height: 90vh;
+}
+
+.d-block w-100{
+    width: 100%;
+    height: 100%;
+}
+
 .container-fluid{
     width: 100px;
     height: 100px;
     border: 5px solid rgba(0,0,0,0.5);
+}
+
+section{
+    display: block;
+}
+
+footer{
+    background-color: #2D274D;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.tamanho{
+    width: 2rem;
+    margin-top: 15px;
+    padding: 1%;
+}
+
+.logos_footer{
+    display: block;
+    flex-direction:row;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;  
+}
+
+.texto_footer{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.15rem;
+    margin: 0;
+    padding-top: 0.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px){
+    
+    .logos_footer{
+        display: flex;
+        text-align: center;
+    }
+
+    .texto_footer{
+        text-align: center;
+    }
+
+    #hamburguer{
+        display: none;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .header_logo{
+        margin-left: 5px;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+        display: block;
+    }
+    .header_nav a:hover{
+        background-color: purple;
+        color: black;
+    }
+    .logos_footer{
+        display: flex;
+        text-align: center;
+    }
+
+    .texto_footer{
+        text-align: center;
+    }
 }
