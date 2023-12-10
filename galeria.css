@@ -3,16 +3,14 @@ main{
 }
 
 div.container-fluid{
-    padding: 0;
+    text-align: center;
+    max-height: 90vh;
 }
 
 div.flex{
     display: flex;
     align-items: center;
-    height: 100vh;
 }
-
-img {width: 100vh;}
 
 
 body {
@@ -20,7 +18,20 @@ body {
     background-color: black;
 }
 
+ img{
+    height: 98vh;
+}
+
 html {
     margin: 0;
     background-color: black;
+}
+
+@media screen and (max-width: 768px){
+main {
+    padding-top: 50%;
+}
+    img {
+        height: 50%;
+    }
 }
