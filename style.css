@@ -6,13 +6,13 @@ body{
 html{
     margin:0px;
     line-height: 2rem;
+    -webkit-text-size-adjust: 100%;
 }
 
 .header{
     margin: auto;
     padding: 0;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     background-color: #2D274D;
 }
 
@@ -20,6 +20,8 @@ html{
     width: 50px;
     height: auto;
     margin-left: 5px;   
+    align-items: center;
+    justify-content: center;
 }
 
 .header_nav{
@@ -44,26 +46,26 @@ html{
 .header_nav a{
     color: white;
     text-decoration: none;   
-    border-radius: 5px;
     display: block;
     padding: 10px;
 }
 
 .header_nav a:hover{
-    text-decoration: none; 
     background-color: purple; 
 }
 
 .header_nav ul{
-    
-    list-style-type: none;
     margin: 0;
+    padding: 0;
     font-size: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 #hamburguer{
     background-color: lightblue;
-    color: red;
+    color: purple;
     display: block;
     text-align: center;
     padding: 5px;
@@ -74,7 +76,7 @@ html{
 .fundo_main{
     background-image: url(imagens/fundo.jpg);
     background-size: cover;
-    background-position: left center;
+    background-position: right center;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -118,19 +120,19 @@ section{
 footer{
     background-color: #2D274D;
     align-items: center;
-    padding: 0.5rem;
+    margin: auto;
+    padding: 0;
 }
 
 .tamanho{
     width: 2rem;
-    margin-top: 15px;
-    padding: 1%;
+    margin-top: 10px;
 }
 
 .logos_footer{
     display: block;
     flex-direction:row;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
     justify-content: center;  
 }
@@ -144,7 +146,7 @@ footer{
     padding-top: 0.5rem;
     color: white;
     text-align: center;
-    margin-top: 10px;
+
 }
 
 @media screen and (min-width: 768px){
